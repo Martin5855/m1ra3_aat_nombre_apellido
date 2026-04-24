@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad uso de Framework css</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <section class="row">
+            <section class="col">
+                <br>
+                <img src="imagenes/LogoINTECAP2.png" alt="">
+            </section>
+
+            <section class="col text-end">
+                <br>
+
+                <a href="https://www.facebook.com/intecapoficial" target="_blank" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="Facebook INTECAP"><img src="imagenes/logofacebook.png"
+                        alt="Facebook" class="logo"></a>
+                <a href="https://x.com/intecapoficial" target="_blank" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="X INTECAP"><img src="imagenes/logox.png" alt="X" class="logo"></a>
+                <a href="https://www.instagram.com/intecapoficial/" target="_blank" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="Instagram INTECAP"><img src="imagenes/imageninstagram.png"
+                        alt="Instagram" class="logo"></a>
+                <a href="https://www.youtube.com/user/intecapguate" target="_blank" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="YouTube INTECAP"><img src="imagenes/logoyoutube.png" alt="YouTube"
+                        class="logo"></a>
+                <a href="https://gt.linkedin.com/school/intecapoficial/" target="_blank" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="LinkedIn INTECAP"><img src="imagenes/logoin copy.png"
+                        alt="LinkedIn" class="logo"></a>
+            </section>
+        </section>
+        <hr>
+    </header>
+    <nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="empleados.html">Empleados</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sueldoliquido.html">Sueldo Líquido</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Indemnizacion.html">Indemnización</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row mt-2">
+            <div class="col-9 border ">
+
+
+
+                <form class="row">
+                    <div class="col">
+                        <h3 style="color: rgb(212, 134, 56);">
+                            INGRESOS
+                        </h3>
+
+
+                        <label for="textSal" class="form-label">Salario</label>
+                        <input type="number" id="textSal" name="textSal" placeholder="Salario" class="form-control">
+
+                        <label for="textBon" class="form-label">Bonificación:</label>
+                        <input type="number" id="textBon" name="textBon" placeholder="Bonificación"
+                            class="form-control">
+
+                        <label for="textCom" class="form-label">Comisiones:</label>
+                        <input type="number" id="textCom" name="textCom" placeholder="Comisiones" class="form-control">
+
+                        <label for="totalGan" class="form-label">Total Ganado</label>
+                        <input type="number" id="totalGan" name="totalGan" class="form-control" readonly>
+
+
+
+
+                    </div>
+                    <div class="col">
+                        <h3 style="color: rgb(212, 134, 56);">
+                            EGRESOS
+                        </h3>
+
+                        <label for="textAh" class="form-label">Ahorro:</label>
+                        <input type="number" id="textAh" name="textAh" placeholder="Ahorro" class="form-control">
+
+                        <label for="textIgss" class="form-label">IGSS:</label>
+                        <input type="number" id="textIgss" name="textIgss" placeholder="IGSS" class="form-control"
+                            readonly>
+
+                        <label for="textPres" class="form-label">Prestamo/Otros Descuentos:</label>
+                        <input type="number" id="textPres" name="textPres" placeholder="Otros Descuentos"
+                            class="form-control">
+
+                        <label for="totalDesc" class="form-label">Total Descuentos</label>
+                        <input type="number" id="varDesc" name="varDesc" class="form-control" readonly>
+
+                    </div>
+
+                    <button type="button" class="form-control btn btn-primary mt-5" id="btnSueldoLiquido">Obtener SueldoLiquido</button>
+                    
+                    <div>
+                        <label for="salarioFinal" class="form-label">Sueldo Líquido</label>
+                        <input type="number" id="salarioFinal" name="salarioFinal" class="form-control" readonly>
+                    </div>
+
+                </form>
+
+                <div id="resultadoSueldoLiquido"></div>
+                
+
+            </div>
+            <div class="col-3 border ">
+                <img src="imagenes/logo53intecap.webp" alt="logo INTECAP" style="width: 100%;">
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/sueldoliquido.js"></script>
+</body>
+
+</html>

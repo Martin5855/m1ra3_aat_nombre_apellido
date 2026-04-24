@@ -1,0 +1,23 @@
+.logo {
+    width: 65px;
+    height: 65px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin: 0 5px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.container {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(123, 215, 152);
+}
+
+/* Estilización personalizada para los Tooltips de Bootstrap */
+.tooltip {
+    --bs-tooltip-bg: #004b93; /* Azul INTECAP */
+    --bs-tooltip-color: #ffffff;
+}
