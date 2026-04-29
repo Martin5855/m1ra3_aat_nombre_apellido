@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,19 +16,81 @@
                 <br>
                 <img src="imagenes/LogoINTECAP2.png" alt="">
             </section>
-            
+
             <section class="col text-end">
                 <br>
-
-                <a href="https:"></a>
+                <a href="https://www.facebook.com/intecapoficial" target="_blank" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="Facebook INTECAP"><img src="imagenes/logofacebook.png"
+                        alt="Facebook" class="logo"></a>
+                <a href="https://x.com/intecapoficial" target="_blank" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="X INTECAP"><img src="imagenes/logox.png" alt="X" class="logo"></a>
+                <a href="https://www.instagram.com/intecapoficial/" target="_blank" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="Instagram INTECAP"><img src="imagenes/imageninstagram.png"
+                        alt="Instagram" class="logo"></a>
+                <a href="https://www.youtube.com/user/intecapguate" target="_blank" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="YouTube INTECAP"><img src="imagenes/logoyoutube.png" alt="YouTube"
+                        class="logo"></a>
+                <a href="https://gt.linkedin.com/school/intecapoficial/" target="_blank" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="LinkedIn INTECAP"><img src="imagenes/logoin copy.png"
+                        alt="LinkedIn" class="logo"></a>
             </section>
-        
-        
-        
-        
         </section>
 
     </header>
+    <nav>
+        <div class="btn-group w-100">
+            <a href="index.html" class="btn btn-outline-warning">Inicio</a>
+            <a href="empleados.html" class="btn btn-outline-primary">Empleados</a>
+            <a href="sueldoliquido.html" class="btn btn-outline-success">Sueldo Líquido</a>
+            <a href="Indemnizacion.html" class="btn btn-outline-danger">Indemnización</a>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row mt-4">
+            <div class="col-3 border">
+
+                <form class="row"></form>
+                <h3 style="color: rgb(92, 134, 108);">Empledo</h3>
+
+
+
+
+                <label for="textName" class="form-label">Nombre:</label>
+                <input type="text" id="textName" name="textName" placeholder="Nombre" class="form-control">
+
+                <label for="textIngreso" class="form-label">Fecha de Ingreso:</label>
+                <input type="number" id="textIngreso" name="textIngreso" placeholder="Fecha de Ingreso"
+                    class="form-control">
+
+                <label for="textPuesto" class="form-label">Puesto:</label>
+                <input type="name" id="textPuesto" name="textPuesto" placeholder="Puesto" class="form-control">
+
+                <label for="textSal" class="form-label">Salario:</label>
+                <input type="number" id="textSal" name="textSal" class="form-control" readonly>
+
+                <button type="button" class="form-control btn btn-primary mt-5" id="btnGuardar">Guardar</button>
+
+            </div>
+
+            <div class="col border mt-0">
+                <h3 style="color: rgb(96, 129, 98);">Lista de Empleados</h3>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="row mt-2">
+                <div class="col-3 border">
+                    <img src="imagenes/logo53intecap.webp" alt="" width="95%">
+                </div>
+            </div>
+
+    </main>
 
 
 
@@ -37,4 +100,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/empleados.js"></script>
 </body>
+
 </html>
